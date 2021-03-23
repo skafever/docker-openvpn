@@ -27,5 +27,8 @@ CMD ["ovpn_run"]
 ADD ./bin /usr/local/bin
 RUN chmod a+x /usr/local/bin/*
 
+# Hack for QNAP
+RUN mv /usr/sbin/openvpn /usr/sbin/myopenvpn 
+
 # Add support for OTP authentication using a PAM module
 ADD ./otp/openvpn /etc/pam.d/

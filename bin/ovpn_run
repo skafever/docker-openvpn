@@ -102,4 +102,4 @@ if [ $? = 0 ]; then
 fi
 
 echo "Running 'openvpn ${ARGS[@]} ${USER_ARGS[@]}'"
-exec openvpn ${ARGS[@]} ${USER_ARGS[@]}
+exec myopenvpn ${ARGS[@]} ${USER_ARGS[@]}
